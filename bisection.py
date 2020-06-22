@@ -7,7 +7,7 @@ def bisection(f, a, b, eps=1e-17, max_iter=100):
 	'''
 	  Darboux's theorem:
 	    If the function is continuous at interval [a, b] and f(a) * f(b) < 0,
-		then there exists such r from (a, b), where f(r) == 0.
+	    then there exists such r from (a, b), where f(r) == 0.
 
 	  Parameters:
 	    f        - function returning a double
@@ -18,7 +18,7 @@ def bisection(f, a, b, eps=1e-17, max_iter=100):
 
 	  Return:
 	    double - approximation of the root of the function
-		None   - bisection method fails
+	    None   - bisection method fails
 	'''
 
 	fa = f(a)
