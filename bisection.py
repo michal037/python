@@ -1,3 +1,6 @@
+# MIT License
+# Copyright (c) 2020, Michal Kozakiewicz, github.com/michal037
+
 import math
 
 def bisection(f, a, b, eps=1e-17, max_iter=100):
