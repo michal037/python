@@ -5,6 +5,8 @@ import math
 
 def newton(f, df, x0, eps=1e-15, max_iter=25):
 	'''
+	  We assume that a second derivative exists.
+
 	  Parameters:
 	    f        - function returning a double
 	    df       - derivative of f
