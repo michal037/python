@@ -7,14 +7,14 @@ def newton(f, df, x0, eps=1e-15, max_iter=25):
 	'''
 	  Parameters:
 	    f        - function returning a double
-		df       - derivative of f
-		x0       - double: point near the solution
-		eps      - double: assumed accuracy (optional)
-		max_iter - integer: maximum number of steps (optional)
+	    df       - derivative of f
+	    x0       - double: point near the solution
+	    eps      - double: assumed accuracy (optional)
+	    max_iter - integer: maximum number of steps (optional)
 
 	  Return:
 	    double - approximation of the root of the function
-		None   - newton method fails
+	    None   - newton method fails
 	'''
 
 	x = x0
