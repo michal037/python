@@ -3,14 +3,14 @@
 
 import math
 
-def newton(f, df, x0, eps=1e-15, max_iter=25):
+def newton(f, df, x0, eps=1e-15, max_iter=100):
 	'''
 	  Parameters:
 	    f        - function returning a double
 		df       - derivative of f
 		x0       - double: point near the solution
-		eps      - double: assumed accuracy (optional)
-		max_iter - integer: maximum number of steps (optional)
+		eps      - double: assumed accuracy (optional); 0 < eps < 1
+		max_iter - integer: maximum number of steps (optional); max_iter > 0
 
 	  Return:
 	    double - approximation of the root of the function
