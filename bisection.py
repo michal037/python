@@ -13,8 +13,8 @@ def bisection(f, a, b, eps=1e-17, max_iter=100):
 	    f        - function returning a double
 	    a        - double: left  end of the interval [a, b]
 	    b        - double: right end of the interval [a, b]
-	    eps      - double: assumed accuracy (optional); 0 < eps < 1
-	    max_iter - integer: maximum number of steps (optional); max_iter > 0
+	    eps      - double: assumed accuracy (optional)
+	    max_iter - integer: maximum number of steps (optional)
 
 	  Return:
 	    double - approximation of the root of the function
