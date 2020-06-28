@@ -11,13 +11,8 @@ def newton(f, df, x0, eps=1e-15, max_iter=100):
 	    f        - function returning a double
 	    df       - derivative of f
 	    x0       - double: point near the solution
-<<<<<<< HEAD
 	    eps      - double: assumed accuracy (optional); 0 < eps < 1
 	    max_iter - integer: maximum number of steps (optional); max_iter > 0
-=======
-	    eps      - double: assumed accuracy (optional)
-	    max_iter - integer: maximum number of steps (optional)
->>>>>>> f7e9857746ad2da992365429edd4604d0aa2f0c1
 
 	  Return:
 	    double - approximation of the root of the function
