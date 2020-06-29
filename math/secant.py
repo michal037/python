@@ -21,6 +21,12 @@ def secant(f, a, b, eps=1e-15, max_iter=100):
 	    None   - secant method fails
 	'''
 
+	if eps <= 0 or eps >= 1:
+		return None
+
+	if max_iter <= 0:
+		return None
+
 	# one end of the interval is the solution
 	if f(a) == 0:
 		return a	

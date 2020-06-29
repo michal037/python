@@ -19,6 +19,12 @@ def newton(f, df, x0, eps=1e-15, max_iter=100):
 	    None   - newton method fails
 	'''
 
+	if eps <= 0 or eps >= 1:
+		return None
+
+	if max_iter <= 0:
+		return None
+
 	x = x0
 
 	for _ in range(max_iter):

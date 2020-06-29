@@ -21,6 +21,12 @@ def bisection(f, a, b, eps=1e-17, max_iter=100):
 	    None   - bisection method fails
 	'''
 
+	if eps <= 0 or eps >= 1:
+		return None
+
+	if max_iter <= 0:
+		return None
+
 	fa = f(a)
 	fb = f(b)
 
