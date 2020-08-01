@@ -3,11 +3,11 @@
 class Singleton:
 	def __new__(cls, *_, **__):
 		self = object.__new__(cls)
-		cls.__new__ = lambda *_, **__: self
+		cls.__new__ = lambda *a, **b: self
 		return self
 
 	def singleton(self):
-		self.__class__.__new__ = lambda *_, **__: self
+		self.__class__.__new__ = lambda *c, **d: self
 
 ### EXAMPLE 1 ### EXAMPLE 1 ### EXAMPLE 1 ### EXAMPLE 1 ### EXAMPLE 1 ##########
 
